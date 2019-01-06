@@ -2,7 +2,9 @@
 
 #### keytool是jdk自带的生成证书工具，cmd或shell里输入keytool -help即可查看相关操作（需先配置好java环境）
 
-```keytool -genkey -alias tomcat -storetype jks -keyalg RSA -keysize 2048 -keystore keystore.jks -validity 3650
+```
+keytool -genkey -alias tomcat -storetype jks -keyalg RSA -keysize 2048 -keystore keystore.jks -validity 3650
+
 Enter keystore password:  
 Re-enter new password: 
 What is your first and last name?
@@ -24,7 +26,9 @@ Enter key password for <tomcat>
 ```
 
 参数说明：
-```keytool -genkey -help
+```
+keytool -genkey -help
+
 keytool -genkeypair [OPTION]...
 
 Generates a key pair
@@ -70,7 +74,7 @@ keysote.jks文件拷贝到sprinboot项目resource文件下，启动提示
 ``` Tomcat started on port(s): 8443 (https) with context path '' ```
 
 - 使用自签名的文件访问网站会有安全提示，选择高级继续访问即可
-[](assert/operating/errcert.png)"无效证书提示"
+![](assert/operating/errcert.png)"无效证书提示"
 
 #### 支持http和https两种方式访问[示例](https://github.com/spring-projects/spring-boot/tree/v2.0.7.RELEASE/spring-boot-samples/spring-boot-sample-tomcat-multi-connectors)
 
@@ -108,6 +112,7 @@ public class HttpServletConnectorConfig {
 
 }
 ```
+启动后提示``Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''``
 
 #### http请求重定向到https请求(springboot2 springboot1[参考](https://www.jianshu.com/p/01c4f7a7b2c5))
 
