@@ -1,6 +1,6 @@
 # keytool生成自签名证书springboot配置SSL
 
-#### keytool是jdk自带的生成证书工具，cmd或shell里输入keytool -help即可查看相关操作（需先配置好java环境）
+### keytool是jdk自带的生成证书工具，cmd或shell里输入keytool -help即可查看相关操作（需先配置好java环境）
 
 ```
 keytool -genkey -alias tomcat -storetype jks -keyalg RSA -keysize 2048 -keystore keystore.jks -validity 3650
@@ -58,7 +58,7 @@ Options:
 Use "keytool -help" for all available commands
 ```
 
-#### springboot配置application.yml[Configure SSL](https://docs.spring.io/spring-boot/docs/2.0.7.RELEASE/reference/htmlsingle/#howto-configure-ssl)
+### springboot配置application.yml[Configure SSL](https://docs.spring.io/spring-boot/docs/2.0.7.RELEASE/reference/htmlsingle/#howto-configure-ssl)
 
 ```
 server:
@@ -76,7 +76,7 @@ keysote.jks文件拷贝到sprinboot项目resource文件下，启动提示
 - 使用自签名的文件访问网站会有安全提示，选择高级继续访问即可
 ![](../assets/operating/errcert.png "无效证书提示")
 
-#### 支持http和https两种方式访问[示例](https://github.com/spring-projects/spring-boot/tree/v2.0.7.RELEASE/spring-boot-samples/spring-boot-sample-tomcat-multi-connectors)
+### 支持http和https两种方式访问[示例](https://github.com/spring-projects/spring-boot/tree/v2.0.7.RELEASE/spring-boot-samples/spring-boot-sample-tomcat-multi-connectors)
 
 1. application.yml添加配置http端口
 ```
@@ -114,7 +114,7 @@ public class HttpServletConnectorConfig {
 ```
 启动后提示``Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''``
 
-#### http请求重定向到https请求springboot2 (springboot1[参考](https://www.jianshu.com/p/01c4f7a7b2c5))
+### http请求重定向到https请求springboot2 (springboot1[参考](https://www.jianshu.com/p/01c4f7a7b2c5))
 
 ```
 @Configuration
