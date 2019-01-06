@@ -74,7 +74,7 @@ keysote.jks文件拷贝到sprinboot项目resource文件下，启动提示
 ``` Tomcat started on port(s): 8443 (https) with context path '' ```
 
 - 使用自签名的文件访问网站会有安全提示，选择高级继续访问即可
-![](../assets/operating/errcert.png)"无效证书提示"
+![](../assets/operating/errcert.png "无效证书提示")
 
 #### 支持http和https两种方式访问[示例](https://github.com/spring-projects/spring-boot/tree/v2.0.7.RELEASE/spring-boot-samples/spring-boot-sample-tomcat-multi-connectors)
 
