@@ -1,6 +1,7 @@
 # springboot2.x-mybatis多数据源
 
 1. ### application配置
+
  ``` application.yml配置
  #application.yml,包括部分druid配置
  spring:
@@ -50,9 +51,11 @@
      max-pool-prepared-statement-per-connection-size: 20
 
  ```
+
  **添加一个datasource配置，注意只能小写并且下划线会被忽略，前缀没有关系，两个datasource区分就可以**
 
 2. ### config代码应用配置信息，分别配置datasource、SqlSessionFactory、DataSourceTransactionManager、SqlSessionTemplate
+
  ```主datasource
  //主datasource
  @Configuration
