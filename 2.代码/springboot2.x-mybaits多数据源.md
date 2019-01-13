@@ -1,6 +1,6 @@
 # springboot2.x-mybatis多数据源
 
-1. ### application配置
+### 1. application配置
 
  ``` application.yml配置
  #application.yml,包括部分druid配置
@@ -54,7 +54,7 @@
 
  **添加一个datasource配置，注意只能小写并且下划线会被忽略，前缀没有关系，两个datasource区分就可以**
 
-2. ### config代码应用配置信息，分别配置datasource、SqlSessionFactory、DataSourceTransactionManager、SqlSessionTemplate
+### 2. config代码应用配置信息，分别配置datasource、SqlSessionFactory、DataSourceTransactionManager、SqlSessionTemplate
 
  ```主datasource
  //主datasource
@@ -134,4 +134,4 @@
 
  **3. 配置SqlSessionFactory时要分别设置mapper的映射文件路径，建议其他内容如model文件、service文件也相应区分目录。**
 
-3. ### 结束，其他和单数据源使用一样
+### 3. 结束，其他和单数据源使用一样
