@@ -126,4 +126,5 @@
  
  ```
  **必须要有一个主datasource使用``@Primary``注解标记,配置SqlSessionFactory时要分别设置mapper的映射文件路径，建议其他内容如model文件、service文件也相应区分目录**
+
 3. ### 结束，其他和单数据源使用一样
