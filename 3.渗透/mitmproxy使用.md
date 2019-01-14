@@ -18,14 +18,22 @@
 ### 操作
 
  ``zz`` 清空流
+
  ``?`` 显示帮助菜单
+
  vim软件操作详情页信息
  ![](../assets/penetrating/mitmproxy_help.png)
+
  ``Tab键`` 切换标签页
+
  ``q`` 返回
+
  ``enter键`` 查看详情
+
  ![](../assets/penetrating/mitmproxy_detail.png)
+
  ``e`` 编辑详情
+
  ![](../assets/penetrating/mitmproxy_edit.png)
 
  **例如：修改url**
@@ -33,11 +41,17 @@
  ![](../assets/penetrating/mitmproxy_editurl.png)
 
  ``r`` 重放，重新请求
+
  ![](../assets/penetrating/mitmproxy_replay.png)
+
  ``f`` 设置过滤
+
  ![](../assets/penetrating/mitmproxy_viewfilter.png)
+
  ``i`` 设置拦截条件
+
  ![](../assets/penetrating/mitmproxy_intercept.png)
+
  ``a`` 允许请求
 
  
