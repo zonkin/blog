@@ -84,8 +84,8 @@ server:
   port: 8443
   ssl:
     key-store: classpath:keystore.jks
-    key-store-password: gpsnorth
-    key-password: gpsnorth
+    key-store-password: password
+    key-password: password
   http:
     port: 8080
 ```
