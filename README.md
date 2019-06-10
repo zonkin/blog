@@ -12,6 +12,7 @@
 
 ## 代码
 * [springboot2.x-mybaits多数据源](2.代码/springboot2.x-mybaits多数据源.md)
+* [java远程debug-jdb](2.代码/java远程debug-jdb.md)
 
 ## 渗透
 * [mitmproxy使用](3.渗透/mitmproxy使用.md)
