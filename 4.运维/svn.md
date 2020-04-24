@@ -11,12 +11,12 @@ ver:文件版本
 * svn log -l 5 -v  
 查看最近5条提交记录，确认最后文件的版本，取D标识前面一个版本就可以，此处为212版本
 * svn up -r 212 sitemap.json  
-更新要从212版本恢复的文件，此处会提示文件在某个版本添加并在某个版本删除，并且这个文件在当前版本里未加入仓库，选择r加入仓库。
+更新要从212版本恢复的文件，此处会提示文件在某个版本添加并在某个版本删除，并且这个文件在当前版本里未加入仓库，选择r加入仓库。  
 ![](../assets/operating/svnupr.png)
 * svn status  
 查看当前状态，会提示sitemap.json处于删除状态
 * svn up  
-更新本地仓库，提示sitemap.json文件冲突，文件已经被删除，是否把文件包含到仓库里，选择包含到仓库。
+更新本地仓库，提示sitemap.json文件冲突，文件已经被删除，是否把文件包含到仓库里，选择包含到仓库。  
 ![](../assets/operating/svnupconflict.png)
 * svn ci -m "恢复sitemap.json"  
 重新提交文件
